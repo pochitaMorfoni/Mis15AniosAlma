@@ -1,0 +1,52 @@
+.rsvp-section {
+  text-align: center;
+  padding-bottom: 50px;
+
+  .invitation-text {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 60px; /* Aumentado margen inferior */
+    color: var(--color-text);
+    padding: 0 20px;
+
+    p {
+      margin-bottom: 15px;
+    }
+  }
+
+  .airplane-illustration {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto 60px auto; /* Aumentado margen inferior para separar del botón */
+    
+    .pink-blob {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 130%;
+      height: 140%;
+      background-color: var(--color-secondary);
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      z-index: 1;
+    }
+
+    .plane-img {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      border-radius: 20px;
+      mix-blend-mode: multiply;
+    }
+  }
+
+  .rsvp-button-wrapper {
+    margin-bottom: 50px;
+  }
+
+  .footer {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--color-text);
+  }
+}

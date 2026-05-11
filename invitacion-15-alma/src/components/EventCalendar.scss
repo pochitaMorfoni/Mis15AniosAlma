@@ -1,0 +1,108 @@
+.event-calendar {
+  .month-title {
+    font-size: 4rem;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+
+  .calendar-grid {
+    max-width: 350px;
+    margin: 0 auto 50px auto;
+
+    .weekdays {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      margin-bottom: 15px;
+
+      .day-name {
+        font-family: var(--font-body);
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: var(--color-text);
+      }
+    }
+
+    .days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      row-gap: 20px;
+
+      .calendar-cell {
+        font-family: var(--font-body);
+        font-size: 1.1rem;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+
+        &.marked {
+          font-weight: 600;
+        }
+
+        .heart-marker {
+          position: absolute;
+          z-index: -1;
+          top: -2px;
+        }
+      }
+    }
+  }
+
+  .countdown-oval {
+    position: relative;
+    padding: 30px 20px;
+    margin: 0 auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .countdown-ring {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px solid var(--color-border);
+      border-radius: 50%;
+      transform: rotate(-5deg);
+
+      &.secondary {
+        transform: rotate(2deg);
+        border-color: rgba(230, 133, 164, 0.3);
+      }
+    }
+
+    .countdown-numbers {
+      font-size: 3.5rem;
+      font-family: var(--font-sans);
+      color: var(--color-primary);
+      letter-spacing: 2px;
+      font-weight: 300;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .countdown-labels {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      font-size: 0.7rem;
+      font-family: var(--font-sans);
+      color: var(--color-text);
+      opacity: 0.6;
+      letter-spacing: 1px;
+    }
+
+    .sparkles {
+      position: absolute;
+      top: -10px;
+      right: 20px;
+      font-size: 1.5rem;
+      color: var(--color-accent);
+    }
+  }
+}

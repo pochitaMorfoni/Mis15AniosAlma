@@ -1,0 +1,43 @@
+.airplane-action-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.simple-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: var(--font-sans);
+
+  &.primary {
+    background-color: var(--color-primary);
+    color: white;
+    box-shadow: 0 4px 15px rgba(230, 133, 164, 0.4);
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(230, 133, 164, 0.5);
+    }
+  }
+
+  &.secondary {
+    background-color: #d1d5db;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+  }
+}

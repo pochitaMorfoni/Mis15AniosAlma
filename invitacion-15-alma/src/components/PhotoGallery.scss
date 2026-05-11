@@ -1,0 +1,54 @@
+.polaroid-section {
+  .polaroids-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 40px 0;
+
+    .star-deco {
+      position: absolute;
+      font-size: 2rem;
+      color: #d1d5db;
+      z-index: 0;
+
+      &.top-left { top: -20px; left: 10%; }
+      &.bottom-right { bottom: -20px; right: 10%; }
+    }
+
+    .polaroid-card {
+      background: #f8b9d4; /* Color rosa claro como la foto 3 */
+      padding: 15px 15px 40px 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      width: 280px;
+      position: relative;
+      z-index: 1;
+
+      &.left { transform: rotate(-5deg); align-self: flex-start; margin-left: 5%; }
+      &.right { transform: rotate(5deg); align-self: flex-end; margin-right: 5%; }
+
+      .polaroid-img-wrapper {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &::after {
+        content: '⭐';
+        position: absolute;
+        color: #d1d5db;
+      }
+
+      &.left::after { right: -15px; top: -15px; }
+      &.right::after { left: -15px; bottom: 10px; }
+    }
+  }
+}

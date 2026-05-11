@@ -1,0 +1,41 @@
+.location-section {
+  text-align: center;
+
+  .location-title {
+    font-family: var(--font-body);
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 30px;
+  }
+
+  .venue-photo {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      position: relative;
+      z-index: 2;
+    }
+
+    .venue-blob {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 120%;
+      height: 130%;
+      background-color: var(--color-secondary);
+      border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+      z-index: 1;
+      opacity: 0.5;
+    }
+  }
+
+  .btn-wrapper {
+    margin-top: 20px;
+  }
+}
