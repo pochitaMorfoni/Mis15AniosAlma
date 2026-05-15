@@ -24,8 +24,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 130%;
-      height: 140%;
+      width: 110%;
+      height: 120%;
       background-color: var(--color-secondary);
       border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
       z-index: 1;
@@ -36,6 +36,7 @@
       z-index: 2;
       width: 100%;
       border-radius: 20px;
+      opacity: 0.8;
       mix-blend-mode: multiply;
     }
   }
@@ -46,7 +47,8 @@
 
   .footer {
     font-weight: bold;
-    font-size: 1.2rem;
-    color: var(--color-text);
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
   }
 }

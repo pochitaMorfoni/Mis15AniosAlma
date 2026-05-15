@@ -19,7 +19,7 @@ const MusicPlayer = () => {
     <div className="music-player-container">
       <audio 
         ref={audioRef} 
-        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" 
+        src='/music/Icona Pop - I Love It (Feat. Charli XCX)  [Audio].mp3' 
         loop 
       />
       <button 

@@ -18,7 +18,7 @@ const EventCalendar = () => {
       <div className="countdown-ring"></div>
       <div className="countdown-ring secondary"></div>
       <div className="countdown-numbers">
-        {String(days).padStart(3, '0')}:{String(hours).padStart(2, '0')}:{String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}
+        {String(days).padStart(2, '0')}:{String(hours).padStart(2, '0')}:{String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}
       </div>
       <div className="countdown-labels">
         <span>DÍAS</span>

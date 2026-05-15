@@ -1,6 +1,9 @@
 import React, { useState, useRef } from 'react';
 import { FaPlay, FaPause, FaStepBackward, FaStepForward, FaRandom, FaSyncAlt, FaPlane } from 'react-icons/fa';
 import './HeaderIntro.scss';
+import cake from '/images/cake.png';
+import dress from '/images/dress.png';
+import number15 from '/images/number.png';
 
 const HeaderIntro = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -33,7 +36,8 @@ const HeaderIntro = () => {
 
           {/* Birthday Pink Passport (Style requested) */}
           <div className="birthday-passport-card">
-            <div className="passport-ticket">
+            <img src="/images/passport.png" alt="Passport Icon" className="passport-icon" />
+            {/*<div className="passport-ticket">
               <div className="ticket-text">BOARDING PASS</div>
             </div>
             
@@ -48,7 +52,7 @@ const HeaderIntro = () => {
               </div>
               
               <div className="passport-text bottom">ALMA</div>
-            </div>
+            </div>*/}
           </div>
 
           {/* Stickers */}
@@ -56,7 +60,9 @@ const HeaderIntro = () => {
           <div className="sticker-star s2">☆</div>
           <div className="sticker-dot d1"></div>
           <div className="sticker-dot d2"></div>
-          <div className="sticker-cake">🎂</div>
+          <div className="sticker-cake"><img src={cake} alt="Cake" /></div>
+          <div className="sticker-dress"><img src={dress} alt="Dress" /></div>
+          <div className="sticker-number15"><img src={number15} alt="Number 15" /></div>
           <svg className="star-drawn bottom-right" viewBox="0 0 24 24"><path fill="none" stroke="#2a2a2a" strokeWidth="1.5" d="M12 2l3 7 7 1-5 5 1 7-7-4-7 4 1-7-5-5 7-1z"/></svg>
         </div>
       </div>
@@ -65,7 +71,7 @@ const HeaderIntro = () => {
         <h2 className="subtitle-text llamativo">Dale play a mi canción favorita</h2>
 
         <div className="music-player-pill">
-          <audio ref={audioRef} src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" loop />
+          <audio ref={audioRef} src='/music/Icona Pop - I Love It (Feat. Charli XCX)  [Audio].mp3' loop />
           <div className="player-controls">
             <FaRandom className="player-icon small" />
             <FaStepBackward className="player-icon" />

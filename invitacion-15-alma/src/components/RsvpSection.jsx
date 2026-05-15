@@ -12,7 +12,7 @@ const RsvpSection = () => {
 
       <div className="airplane-illustration">
         <img 
-          src="/images/airplane_illustration.png" 
+          src="/images/airplane_illustration (1).png" 
           alt="Avión de papel o viaje" 
           className="plane-img" 
         />
@@ -28,7 +28,7 @@ const RsvpSection = () => {
       </div>
 
       <footer className="footer">
-        <p>Contacto para invitaciones: 300 5797365</p>
+        <p>Contacto para invitaciones: 2262559594</p>
       </footer>
     </section>
   );
